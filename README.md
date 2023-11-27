@@ -6,6 +6,7 @@ This demo presents a streamlined shopping app focused on sweaters
 - Browse Sweaters: Users can view a selection of sweaters, complete with details and images.
 - Add to Cart: Allows adding sweaters to a shopping cart for potential purchase.
 - Cart Management: Provides functionality to view and remove items from the cart.
+- Custom webView page
 
 ### Usage
 
