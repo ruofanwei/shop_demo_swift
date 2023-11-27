@@ -20,6 +20,7 @@
 		33BBD73C2B14860900A23A2B /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD73B2B14860900A23A2B /* CartView.swift */; };
 		33BBD73E2B1486F600A23A2B /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD73D2B1486F600A23A2B /* CartManager.swift */; };
 		33BBD7402B1489B600A23A2B /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD73F2B1489B600A23A2B /* ProductRow.swift */; };
+		33BBD7462B14972F00A23A2B /* WebViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD7452B14972F00A23A2B /* WebViewButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		33BBD73B2B14860900A23A2B /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		33BBD73D2B1486F600A23A2B /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		33BBD73F2B1489B600A23A2B /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		33BBD7452B14972F00A23A2B /* WebViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				33BBD7362B14797B00A23A2B /* ProductCard.swift */,
 				33BBD7392B1483A300A23A2B /* CartButton.swift */,
 				33BBD73F2B1489B600A23A2B /* ProductRow.swift */,
+				33BBD7452B14972F00A23A2B /* WebViewButton.swift */,
 			);
 			path = Compnents;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				33BBD73E2B1486F600A23A2B /* CartManager.swift in Sources */,
 				33BBD7092B146F9700A23A2B /* ShopDemoApp.swift in Sources */,
 				33BBD7402B1489B600A23A2B /* ProductRow.swift in Sources */,
+				33BBD7462B14972F00A23A2B /* WebViewButton.swift in Sources */,
 				33BBD7342B14754A00A23A2B /* Product.swift in Sources */,
 				33BBD7372B14797B00A23A2B /* ProductCard.swift in Sources */,
 				33BBD73A2B1483A300A23A2B /* CartButton.swift in Sources */,
