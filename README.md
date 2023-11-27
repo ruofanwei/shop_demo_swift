@@ -13,3 +13,8 @@ This demo presents a streamlined shopping app focused on sweaters
 - Browse the sweater collection.
 - Add selections to the shopping cart.
 - Manage your cart, including removing items as needed.
+
+### Demo
+![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjRmMXI2Ymd1OXU5eDNtdmo0czlmOTdyYTBhcHl3eHZobTFiazN6NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/21ecxaZcaA4A2Qek7f/giphy.gif)
+
+
