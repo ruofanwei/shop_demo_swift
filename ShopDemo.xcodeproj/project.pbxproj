@@ -21,6 +21,7 @@
 		33BBD73E2B1486F600A23A2B /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD73D2B1486F600A23A2B /* CartManager.swift */; };
 		33BBD7402B1489B600A23A2B /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD73F2B1489B600A23A2B /* ProductRow.swift */; };
 		33BBD7462B14972F00A23A2B /* WebViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD7452B14972F00A23A2B /* WebViewButton.swift */; };
+		33BBD7482B1DF1C600A23A2B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD7472B1DF1C600A23A2B /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		33BBD73D2B1486F600A23A2B /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		33BBD73F2B1489B600A23A2B /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		33BBD7452B14972F00A23A2B /* WebViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewButton.swift; sourceTree = "<group>"; };
+		33BBD7472B1DF1C600A23A2B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				33BBD70A2B146F9700A23A2B /* ContentView.swift */,
 				33BBD73B2B14860900A23A2B /* CartView.swift */,
+				33BBD7472B1DF1C600A23A2B /* SplashScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BBD7482B1DF1C600A23A2B /* SplashScreen.swift in Sources */,
 				33BBD73C2B14860900A23A2B /* CartView.swift in Sources */,
 				33BBD70B2B146F9700A23A2B /* ContentView.swift in Sources */,
 				33BBD73E2B1486F600A23A2B /* CartManager.swift in Sources */,

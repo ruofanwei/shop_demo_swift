@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct ShopDemoApp: App {
+    @State private var isShowingSplash = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isShowingSplash {
+                SplashScreen()
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { // 3 seconds delay
+                            isShowingSplash = false
+                        }
+                    }
+            } else {
+                ContentView()
+            }
         }
     }
 }
