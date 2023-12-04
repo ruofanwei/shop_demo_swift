@@ -23,10 +23,13 @@ struct ContentView: View {
                 .navigationTitle("Sweater Shop")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                                                Button("Show Modal") {
-                                                    showSaleModal = true
-                                                }
-                                            }
+                        Button(action: {
+                                showSaleModal = true
+                            }) {
+                                Image(systemName: "popcorn")
+                                    .padding(.top, 5)
+                            }
+                        }
                     ToolbarItem(placement: .navigationBarTrailing) {
                                                 NavigationLink {
                                                     CartView()
