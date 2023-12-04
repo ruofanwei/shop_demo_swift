@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 @main
 struct ShopDemoApp: App {
     @State private var isShowingSplash = true
+
     
     var body: some Scene {
         WindowGroup {
