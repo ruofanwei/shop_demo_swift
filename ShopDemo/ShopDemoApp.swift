@@ -10,21 +10,9 @@ import GoogleSignIn
 
 @main
 struct ShopDemoApp: App {
-    @State private var isShowingSplash = true
-
-    
     var body: some Scene {
         WindowGroup {
-            if isShowingSplash {
-                SplashScreen()
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { // 3 seconds delay
-                            isShowingSplash = false
-                        }
-                    }
-            } else {
-                ContentView()
-            }
+            ContentView()
         }
     }
 }

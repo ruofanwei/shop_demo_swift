@@ -3,83 +3,65 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var cartManager = CartManager()
     @State private var showSaleModal = false
-    @State private var startTimer = false
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
     var body: some View {
-    ZStack {
-        TabView {
-            
-            NavigationView {
-                ScrollView {
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(productList, id: \.id) { product in
-                            ProductCard(product: product)
-                                .environmentObject(cartManager)
+        ZStack {
+            TabView {
+                NavigationView {
+                    ScrollView {
+                        LazyVGrid(columns: columns, spacing: 20) {
+                            ForEach(productList, id: \.id) { product in
+                                ProductCard(product: product)
+                                    .environmentObject(cartManager)
+                            }
                         }
+                        .padding()
                     }
-                    .padding()
-                }
-                .navigationTitle("Sweater Shop")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: {
+                    .navigationTitle("Sweater Shop")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {
                                 showSaleModal = true
                             }) {
-                                Image(systemName: "popcorn")
+                                Image(systemName: "globe.asia.australia")
                                     .padding(.top, 5)
                             }
                         }
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                                                NavigationLink {
-                                                    CartView()
-                                                        .environmentObject(cartManager)
-                                                } label: {
-                                                    CartButton(numberOfProducts: cartManager.products.count)
-                                                }
-                                            }
-                }
-                .onAppear {
-                    startTimer = true
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
-                        if startTimer {
-                            showSaleModal = true
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            NavigationLink {
+                                CartView()
+                                    .environmentObject(cartManager)
+                            } label: {
+                                CartButton(numberOfProducts: cartManager.products.count)
+                            }
                         }
                     }
                 }
-                .onDisappear {
-                    startTimer = false
-                }
-            }
-            .tabItem {
-                Label("Shop", systemImage: "house")
-            }
-            
-            
-            WebViewPage()
                 .tabItem {
-                    Label("WebView", systemImage: "globe")
+                    Label("Shop", systemImage: "house")
                 }
-            
-            
-            CartView()
-                .environmentObject(cartManager)
-                .tabItem {
-                    Label("Cart", systemImage: "cart")
-                }
-            
-            
-        }
-        if showSaleModal {
-               SaleModalView(showModal: $showSaleModal)
-                  .frame(maxWidth: .infinity, maxHeight: .infinity)
-                  .background(Color.black.opacity(0.5))
-                  .edgesIgnoringSafeArea(.all)
+                
+                WebViewPage()
+                    .tabItem {
+                        Label("WebView", systemImage: "globe")
+                    }
+                
+                CartView()
+                    .environmentObject(cartManager)
+                    .tabItem {
+                        Label("Cart", systemImage: "cart")
+                    }
+            }
+            if showSaleModal {
+                SaleModalView(showModal: $showSaleModal)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.black.opacity(0.5))
+                    .edgesIgnoringSafeArea(.all)
             }
         }
     }
 }
-
 struct SaleModalView: View {
     @Binding var showModal: Bool
 

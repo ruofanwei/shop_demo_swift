@@ -25,18 +25,22 @@ struct WebViewPage: View {
     }
 }
 
+
+
 struct WebView: UIViewRepresentable {
     let url: URL
 
     func makeUIView(context: Context) -> WKWebView {
-        return WKWebView()
+        WKWebView()
     }
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        let request = URLRequest(url: url)
+        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
         uiView.load(request)
     }
 }
+
+
 
 
 struct WebViewButton_Previews: PreviewProvider {
